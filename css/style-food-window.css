@@ -1,0 +1,222 @@
+* {
+  font-family: "Nunito", sans-serif;
+}
+:root {
+  --green: #27ae60;
+  --black: #192a56;
+  --light-black: #afc6ff;
+  --light-color: #666;
+  --light-bgcolor: rgb(230, 230, 230);
+  --light-navColorChenge: rgb(226, 226, 226);
+  --box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+}
+body{
+    overflow: hidden;
+    transition: all 0.75s;
+}
+
+  /* Start Navbar Area */
+  .navbar {
+    z-index: 99;
+    box-shadow: var(--box-shadow);
+    background-color: transparent;
+    transition: all 0.75s;
+  }
+  nav .navbar-brand {
+    font-size: 30px;
+  }
+  nav .navbar-brand i {
+    color: var(--green);
+  }
+  nav .navbar-brand span {
+    color: var(--black);
+    letter-spacing: 2px;
+  }
+  nav .collapse ul li {
+    padding: 10px;
+  }
+  nav .collapse ul li a {
+    color: var(--black) !important;
+    background-color: transparent;
+    border-radius: 5px;
+    transition: all 0.75s ease;
+  }
+  nav .collapse ul li:hover a {
+    background-color: var(--green);
+    color: white !important;
+  }
+  nav .collapse ul li .active {
+    background-color: var(--green);
+    color: white !important;
+  }
+  
+  /* == Icons == */
+  nav .icons ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  nav .icons ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: var(--light-black);
+    border-radius: 50%;
+    margin: 3px;
+    cursor: pointer;
+    transition: all 0.75s ease;
+  }
+  nav .icons i {
+    font-size: 20px;
+    color: var(--black);
+    padding: 8px;
+    transition: all 0.75s ease;
+  }
+  nav .icons ul li:hover {
+    background-color: var(--green);
+  }
+  nav .icons ul li:hover i {
+    color: white;
+  }
+  
+  /* == Small Screen == */
+  @media screen and (max-width: 990px) {
+    .navbar {
+      padding: 0px 20px;
+      text-align: center;
+    }
+    .navbar .navbar-nav {
+      background-color: var(--light-bgcolor);
+    }
+  }
+  /* End Navbar Area */
+
+  
+/* Search Area */
+.search{
+    position: fixed;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 999;
+    display: none;
+    justify-content: center;
+    align-items: center;
+  }
+  .search .alert{
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .search input{
+    width: 50%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 3px solid white !important;
+    border-right: 3px solid white !important;
+    font-weight: bold;
+  }
+  .search span{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: var(--black);
+    color: var(--green);
+    font-size: 30px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 10%;
+    right: 15%;
+    cursor: pointer;
+    transition: all 0.75s;
+  }
+  .search span:hover{
+    color: white;
+    background-color: var(--green);
+  }
+  .search .fa-search{
+    font-size: 30px;
+    color: var(--green);
+    padding: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  
+/* Start Header Area */
+header {
+  background-image: url("../images/headerFood.jpg");
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+header .welcomArea {
+  background-color: rgba(255, 255, 255, 0.7);
+  width: 100%;
+  border-radius: 5px;
+  color: var(--black);
+  font-size: 22px;
+  position: relative;
+}
+header .welcomArea div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+header .welcomArea div h2{
+    font-size: 60px;
+}
+header .welcomArea i {
+  color: var(--green);
+}
+/* End Header Area */
+
+/* Start Food Area */
+section .col-md-3 .foodItem{
+    text-align: center;
+    border-radius: 5px;
+    background-color: var(--light-bgcolor);
+    padding: 15px;
+    margin-left: 5px;
+    height: 430px;
+}
+section .col-md-3 .foodItem img{
+    object-fit: cover;
+    object-position: center;
+    height: 300px;
+    border-radius:3px;
+    cursor: pointer;
+}
+/* End Food Area */
+
+/* Start Loading Page */
+.loadingPage{
+    position: fixed;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+/* End Loading Page */

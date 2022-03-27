@@ -1,0 +1,10 @@
+General Formate:
+
+    --green:#27ae60;
+    --black:#192a56;
+    --light-black:#afc6ff;
+    --light-color:#666;
+    --light-bgcolor:rgb(230, 230, 230);
+    --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
+    --font-family: 'Nunito', sans-serif;
+--------------------------------------------------------------------------------

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food</title>
+    <!-- FavIcon -->
+    <link rel="shortcut icon" href="images/favIcon.png" type="image/x-icon" />
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/all.css" />
+    <!-- My css -->
+    <link rel="stylesheet" href="css/food-details.css" />
+  </head>
+  <body>
+    <!-- Start Navbar Area -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <i class="fas fa-utensils"></i>
+          <span>Resto.</span>
+        </a>
+        <!-- == Icon menu for small screen ==  -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+          <span class="px-2">Menu</span>
+        </button>
+        <!-- == Menu == -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Home</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- End Navbar Area -->
+
+    <section class="p-5 w-100 vh-100">
+      <div class="row pb-5" id="displayDetails">
+        <!-- Display Food Details -->
+      </div>
+    </section>
+
+    <!-- jQuery -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <!-- My JS -->
+    <script src="js/food-details.js"></script>
+  </body>
+</html>

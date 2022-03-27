@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food</title>
+    <!-- FavIcon -->
+    <link rel="shortcut icon" href="images/favIcon.png" type="image/x-icon" />
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/all.css" />
+    <!-- My css -->
+    <link rel="stylesheet" href="css/style-food-window.css" />
+  </head>
+  <body>
+    <!-- Header Area -->
+    <header class="d-flex justify-content-center align-items-center">
+      <div class="welcomArea">
+        <div>
+          <h2>
+            Welcom to the <i class="fas fa-utensils"></i>
+            <span class="fa">Resto.</span>
+          </h2>
+          <h3 class="text-center pt-5 fw-bold fa-3x" id="menuTitle"></h3>
+        </div>
+      </div>
+    </header>
+
+    <!-- Food Area -->
+    <section class="py-5" id="foodArea">
+      <div class="container">
+        <div class="row g-3" id="displayData">
+          <!-- Display Data from Api -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Loading Page -->
+    <div class="loadingPage">
+      <img src="images/loader.gif" alt="loader" />
+    </div>
+
+    <!-- jQuery -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <!-- My JS -->
+    <script src="js/food-window.js"></script>
+  </body>
+</html>

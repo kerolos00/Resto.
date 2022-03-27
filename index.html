@@ -1,0 +1,1028 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resto</title>
+    <!-- FavIcon -->
+    <link rel="shortcut icon" href="images/favIcon.png" type="image/x-icon" />
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.css" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/all.css" />
+    <!-- My css -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Loading Page -->
+    <div class="loadingPage">
+      <img src="images/loader.gif" alt="loader" />
+    </div>
+    <!-- Search Area -->
+    <div class="search">
+      <div class="alert alert-danger d-none">
+        <i class="fas fa-exclamation-triangle"></i>
+        <p>You should enter your favouirt food</p>
+      </div>
+      <input type="text" class="form-control" id="searchInput" />
+      <span id="close"><i class="fas fa-times"></i></span>
+      <a class="text-decoration-none"
+        ><i class="fas fa-search" id="searchButton"></i
+      ></a>
+    </div>
+    <!-- Start Navbar Area -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container">
+        <a class="navbar-brand" href="#home">
+          <i class="fas fa-utensils"></i>
+          <span>Resto.</span>
+        </a>
+        <!-- == Icon menu for small screen ==  -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+          <span class="px-2">Menu</span>
+        </button>
+        <!-- == Menu == -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#home"
+                >Home</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#dishes">Dishes</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#menu">Menu</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#review">Review</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#order">Order</a>
+            </li>
+          </ul>
+
+          <!-- == Icons == -->
+          <div class="icons ms-auto">
+            <ul>
+              <li>
+                <i class="fas fa-search" id="search"></i>
+              </li>
+              <li>
+                <i class="fas fa-heart"></i>
+              </li>
+              <li>
+                <i class="fas fa-shopping-cart"></i>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- End Navbar Area -->
+    <!-- ================================================================== -->
+
+    <!-- Start Home Area -->
+    <section id="home" class="w-100 vh-100">
+      <div
+        id="carouselExampleIndicators"
+        class="carousel slide position-relative"
+        data-bs-ride="carousel"
+      >
+        <!-- == carousel-indicators == -->
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1"
+            class="active"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+
+        <!-- == Home Content == -->
+        <div class="carousel-inner">
+          <div class="carousel-item p-4">
+            <div class="row d-flex align-items-center">
+              <div class="col-md-6">
+                <div class="home-item">
+                  <h4 class="h2">Our Special Dish</h4>
+                  <h2>Fried Chichen</h2>
+                  <p class="text-muted">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Soluta mollitia molestiae vitae quaerat quis hic modi iste
+                    ipsa. Perspiciatis esse enim aut ducimus dolorem delectus et
+                    repellendus eos. In, ipsam?
+                  </p>
+                  <a class="text-decoration-none" href="#order"><button>Order Now</button></a>
+                </div>
+              </div>
+
+              <div class="col-md-6 me-auto">
+                <div class="home-itemImage">
+                  <img src="images/home-img-2.png" alt="home-img-2" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item p-4 active">
+            <div class="row d-flex align-items-center">
+              <div class="col-md-6">
+                <div class="home-item">
+                  <h4 class="h2">Our Special Dish</h4>
+                  <h2>Hot Pizza</h2>
+                  <p class="text-muted">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Soluta mollitia molestiae vitae quaerat quis hic modi iste
+                    ipsa. Perspiciatis esse enim aut ducimus dolorem delectus et
+                    repellendus eos. In, ipsam?
+                  </p>
+                  <a class="text-decoration-none" href="#order"><button>Order Now</button></a>
+                </div>
+              </div>
+
+              <div class="col-md-6 me-auto">
+                <div class="home-itemImage">
+                  <img src="images/home-img-3.png" alt="home-img-2" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item p-3">
+            <div class="row d-flex align-items-center">
+              <div class="col-md-6">
+                <div class="home-item">
+                  <h4 class="h2">Our Special Dish</h4>
+                  <h2>Spicy Noodles</h2>
+                  <p class="text-muted">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Soluta mollitia molestiae vitae quaerat quis hic modi iste
+                    ipsa. Perspiciatis esse enim aut ducimus dolorem delectus et
+                    repellendus eos. In, ipsam?
+                  </p>
+                  <a class="text-decoration-none" href="#order"><button>Order Now</button></a>
+                </div>
+              </div>
+
+              <div class="col-md-6 me-auto">
+                <div class="home-itemImage">
+                  <img src="images/home-img-1.png" alt="home-img-2" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Home Area -->
+    <!-- ================================================================== -->
+
+    <!-- Start Dishes Area  -->
+    <section id="dishes" class="p-5">
+      <h3 class="p-3 h2">Our Dishes</h3>
+      <h4 class="h1 fw-bold pb-5">POPULAR DISHES</h4>
+
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="dishes-item position-relative">
+              <div class="love-see-Icons">
+                <span class="eye"><i class="fas fa-eye"></i></span>
+                <span class="heart"><i class="fas fa-heart"></i></span>
+              </div>
+
+              <img src="images/dish-1.png" class="w-50" alt="dish-1" />
+              <h4 class="fw-bold">Testy Food</h4>
+              <div class="star-icons">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+
+              <div
+                class="price d-flex justify-content-center align-items-center"
+              >
+                <p class="p-4 my-auto">15.99$</p>
+                <button>Add to cart</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="dishes-item position-relative">
+              <div class="love-see-Icons">
+                <span class="eye"><i class="fas fa-eye"></i></span>
+                <span class="heart"><i class="fas fa-heart"></i></span>
+              </div>
+
+              <img src="images/dish-2.png" class="w-50" alt="dish-1" />
+              <h4 class="fw-bold">Testy Food</h4>
+              <div class="star-icons">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+
+              <div
+                class="price d-flex justify-content-center align-items-center"
+              >
+                <p class="p-4 my-auto">15.99$</p>
+                <button>Add to cart</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="dishes-item position-relative">
+              <div class="love-see-Icons">
+                <span class="eye"><i class="fas fa-eye"></i></span>
+                <span class="heart"><i class="fas fa-heart"></i></span>
+              </div>
+
+              <img src="images/dish-3.png" class="w-50" alt="dish-1" />
+              <h4 class="fw-bold">Testy Food</h4>
+              <div class="star-icons">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+
+              <div
+                class="price d-flex justify-content-center align-items-center"
+              >
+                <p class="p-4 my-auto">15.99$</p>
+                <button>Add to cart</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="dishes-item position-relative">
+              <div class="love-see-Icons">
+                <span class="eye"><i class="fas fa-eye"></i></span>
+                <span class="heart"><i class="fas fa-heart"></i></span>
+              </div>
+
+              <img src="images/dish-4.png" class="w-50" alt="dish-1" />
+              <h4 class="fw-bold">Testy Food</h4>
+              <div class="star-icons">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+
+              <div
+                class="price d-flex justify-content-center align-items-center"
+              >
+                <p class="p-4 my-auto">15.99$</p>
+                <button>Add to cart</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="dishes-item position-relative">
+              <div class="love-see-Icons">
+                <span class="eye"><i class="fas fa-eye"></i></span>
+                <span class="heart"><i class="fas fa-heart"></i></span>
+              </div>
+
+              <img src="images/dish-5.png" class="w-50" alt="dish-1" />
+              <h4 class="fw-bold">Testy Food</h4>
+              <div class="star-icons">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+
+              <div
+                class="price d-flex justify-content-center align-items-center"
+              >
+                <p class="p-4 my-auto">15.99$</p>
+                <button>Add to cart</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="dishes-item position-relative">
+              <div class="love-see-Icons">
+                <span class="eye"><i class="fas fa-eye"></i></span>
+                <span class="heart"><i class="fas fa-heart"></i></span>
+              </div>
+
+              <img src="images/dish-6.png" class="w-50" alt="dish-1" />
+              <h4 class="fw-bold">Testy Food</h4>
+              <div class="star-icons">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+
+              <div
+                class="price d-flex justify-content-center align-items-center"
+              >
+                <p class="p-4 my-auto">15.99$</p>
+                <button>Add to cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Dishes Area  -->
+    <!-- ================================================================== -->
+
+    <!-- Start About Area -->
+    <section id="about" class="p-5 mb-3">
+      <div class="container text-center">
+        <h3 class="p-2 h2">About Us</h3>
+        <h4 class="h1 fw-bold pb-5">WHY CHOOSE US?</h4>
+
+        <div class="row">
+          <div class="col-md-6">
+            <div class="about-img">
+              <img src="images/about-img.png" class="w-100" alt="" />
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="about-content text-start">
+              <h4 class="h2 fw-bold pb-2">Best Food In The Country</h4>
+              <p class="pb-2">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
+                ea nisi assumenda consequatur repellat sunt aliquam obcaecati.
+                Repudiandae, tempore corporis! Alias laudantium dicta provident
+                ullam atque maxime, explicabo cumque at!
+              </p>
+              <p class="pb-2">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
+                ea nisi assumenda consequatur repellat sunt aliquam obcaecati.
+                Repudiandae, tempore corporis! Alias laudantium dicta provident
+                ullam atque maxime, explicabo cumque at!
+              </p>
+
+              <div class="buttons">
+                <button><i class="fas fa-truck"></i> Free Delivary</button>
+                <button><i class="fas fa-dollar-sign"></i> Easy Payment</button>
+                <button><i class="fas fa-headset"></i> 24/7 Services</button>
+              </div>
+
+              <div class="learnMore">
+                <button id="learnMore">Learn More</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End About Area -->
+    <!-- ================================================================== -->
+
+    <!-- Start Menu Area -->
+    <section id="menu" class="p-5 mb-3">
+      <div class="container">
+        <div class="text-center">
+          <h3 class="p-2 h2">Our Menu</h3>
+          <h4 class="h1 fw-bold pb-5">TODAY'S SPECIALITY</h4>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="menu-item position-relative">
+              <span class="heart position-absolute"
+                ><i class="fas fa-heart"></i
+              ></span>
+
+              <img src="images/menu-1.jpg" alt="menu-1" />
+
+              <div class="star-icons">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <h4>Delicious Food</h4>
+              <p class="text-start">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore,
+                ad quas eligendi totam commodi ipsam tempora ullam, deserunt
+                blanditiis ab sint illum quidem ipsum optio quae assumenda.
+                Maiores, iste aliquam.
+              </p>
+
+              <div class="menu-innter d-flex justify-content-between container">
+                <button>Add to cart</button>
+                <span>$12.99</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="menu-item position-relative">
+              <span class="heart position-absolute"
+                ><i class="fas fa-heart"></i
+              ></span>
+
+              <img src="images/menu-2.jpg" alt="menu-1" />
+
+              <div class="star-icons">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <h4>Delicious Food</h4>
+              <p class="text-start">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore,
+                ad quas eligendi totam commodi ipsam tempora ullam, deserunt
+                blanditiis ab sint illum quidem ipsum optio quae assumenda.
+                Maiores, iste aliquam.
+              </p>
+
+              <div class="menu-innter d-flex justify-content-between container">
+                <button>Add to cart</button>
+                <span>$12.99</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="menu-item position-relative">
+              <span class="heart position-absolute"
+                ><i class="fas fa-heart"></i
+              ></span>
+
+              <img src="images/menu-3.jpg" alt="menu-1" />
+
+              <div class="star-icons">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <h4>Delicious Food</h4>
+              <p class="text-start">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore,
+                ad quas eligendi totam commodi ipsam tempora ullam, deserunt
+                blanditiis ab sint illum quidem ipsum optio quae assumenda.
+                Maiores, iste aliquam.
+              </p>
+
+              <div class="menu-innter d-flex justify-content-between container">
+                <button>Add to cart</button>
+                <span>$12.99</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="menu-item position-relative">
+              <span class="heart position-absolute"
+                ><i class="fas fa-heart"></i
+              ></span>
+
+              <img src="images/menu-4.jpg" alt="menu-1" />
+
+              <div class="star-icons">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <h4>Delicious Food</h4>
+              <p class="text-start">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore,
+                ad quas eligendi totam commodi ipsam tempora ullam, deserunt
+                blanditiis ab sint illum quidem ipsum optio quae assumenda.
+                Maiores, iste aliquam.
+              </p>
+
+              <div class="menu-innter d-flex justify-content-between container">
+                <button>Add to cart</button>
+                <span>$12.99</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="menu-item position-relative">
+              <span class="heart position-absolute"
+                ><i class="fas fa-heart"></i
+              ></span>
+
+              <img src="images/menu-5.jpg" alt="menu-1" />
+
+              <div class="star-icons">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <h4>Delicious Food</h4>
+              <p class="text-start">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore,
+                ad quas eligendi totam commodi ipsam tempora ullam, deserunt
+                blanditiis ab sint illum quidem ipsum optio quae assumenda.
+                Maiores, iste aliquam.
+              </p>
+
+              <div class="menu-innter d-flex justify-content-between container">
+                <button>Add to cart</button>
+                <span>$12.99</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="menu-item position-relative">
+              <span class="heart position-absolute"
+                ><i class="fas fa-heart"></i
+              ></span>
+
+              <img src="images/menu-6.jpg" alt="menu-1" />
+
+              <div class="star-icons">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <h4>Delicious Food</h4>
+              <p class="text-start">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore,
+                ad quas eligendi totam commodi ipsam tempora ullam, deserunt
+                blanditiis ab sint illum quidem ipsum optio quae assumenda.
+                Maiores, iste aliquam.
+              </p>
+
+              <div class="menu-innter d-flex justify-content-between container">
+                <button>Add to cart</button>
+                <span>$12.99</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Menu Area -->
+    <!-- ================================================================== -->
+
+    <!-- Start Review Area -->
+    <section id="review" class="p-5 mb-3">
+      <div class="container">
+        <div class="text-center">
+          <h3 class="p-2 h2">Customer's Review</h3>
+          <h4 class="h1 fw-bold pb-5">WHAT THEY SAY</h4>
+        </div>
+
+        <div class="owl-carousel">
+          <div class="reviewer">
+            <div
+              class="review-header d-flex justify-content-center align-items-center"
+            >
+              <img src="images/pic-1.png" alt="pic-1" />
+              <div class="innerHeader">
+                <h4>John Deo</h4>
+                <div class="star-icons">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+              <i class="fas fa-quote-right ms-auto quote"></i>
+            </div>
+            <div class="p-3">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+                aspernatur perferendis itaque mollitia dolores hic dolorum
+                delectus, voluptatibus laborum, expedita in recusandae iste,
+                harum necessitatibus distinctio laboriosam? Quisquam, sapiente
+                numquam?
+              </p>
+            </div>
+          </div>
+
+          <div class="reviewer">
+            <div
+              class="review-header d-flex justify-content-center align-items-center"
+            >
+              <img src="images/pic-2.png" alt="pic-1" />
+              <div class="innerHeader">
+                <h4>John Deo</h4>
+                <div class="star-icons">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+              <i class="fas fa-quote-right ms-auto quote"></i>
+            </div>
+            <div class="p-3">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+                aspernatur perferendis itaque mollitia dolores hic dolorum
+                delectus, voluptatibus laborum, expedita in recusandae iste,
+                harum necessitatibus distinctio laboriosam? Quisquam, sapiente
+                numquam?
+              </p>
+            </div>
+          </div>
+
+          <div class="reviewer">
+            <div
+              class="review-header d-flex justify-content-center align-items-center"
+            >
+              <img src="images/pic-3.png" alt="pic-1" />
+              <div class="innerHeader">
+                <h4>John Deo</h4>
+                <div class="star-icons">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+              <i class="fas fa-quote-right ms-auto quote"></i>
+            </div>
+            <div class="p-3">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+                aspernatur perferendis itaque mollitia dolores hic dolorum
+                delectus, voluptatibus laborum, expedita in recusandae iste,
+                harum necessitatibus distinctio laboriosam? Quisquam, sapiente
+                numquam?
+              </p>
+            </div>
+          </div>
+
+          <div class="reviewer">
+            <div
+              class="review-header d-flex justify-content-center align-items-center"
+            >
+              <img src="images/pic-4.png" alt="pic-1" />
+              <div class="innerHeader">
+                <h4>John Deo</h4>
+                <div class="star-icons">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+              <i class="fas fa-quote-right ms-auto quote"></i>
+            </div>
+            <div class="p-3">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+                aspernatur perferendis itaque mollitia dolores hic dolorum
+                delectus, voluptatibus laborum, expedita in recusandae iste,
+                harum necessitatibus distinctio laboriosam? Quisquam, sapiente
+                numquam?
+              </p>
+            </div>
+          </div>
+
+          <div class="reviewer">
+            <div
+              class="review-header d-flex justify-content-center align-items-center"
+            >
+              <img src="images/pic-5.jpg" alt="pic-1" />
+              <div class="innerHeader">
+                <h4>John Deo</h4>
+                <div class="star-icons">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+              <i class="fas fa-quote-right ms-auto quote"></i>
+            </div>
+            <div class="p-3">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+                aspernatur perferendis itaque mollitia dolores hic dolorum
+                delectus, voluptatibus laborum, expedita in recusandae iste,
+                harum necessitatibus distinctio laboriosam? Quisquam, sapiente
+                numquam?
+              </p>
+            </div>
+          </div>
+
+          <div class="reviewer">
+            <div
+              class="review-header d-flex justify-content-center align-items-center"
+            >
+              <img src="images/pic-6.jpg" alt="pic-1" />
+              <div class="innerHeader">
+                <h4>John Deo</h4>
+                <div class="star-icons">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+              <i class="fas fa-quote-right ms-auto quote"></i>
+            </div>
+            <div class="p-3">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+                aspernatur perferendis itaque mollitia dolores hic dolorum
+                delectus, voluptatibus laborum, expedita in recusandae iste,
+                harum necessitatibus distinctio laboriosam? Quisquam, sapiente
+                numquam?
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Review Area -->
+    <!-- ================================================================== -->
+
+    <!-- Start Order-Now Area -->
+    <section id="order" class="p-5">
+      <div class="container">
+        <div class="text-center">
+          <h3 class="p-2 h2">Order Now</h3>
+          <h4 class="h1 fw-bold pb-5">FREE AND FAST</h4>
+        </div>
+
+        <div class="row formOrder">
+          <div class="col-md-6">
+            <div class="order-details">
+              <div class="p-2">
+                <label for="user_name" class="text-muted">Your Name</label>
+                <input
+                  type="text"
+                  id="user_name"
+                  class="form-control"
+                  placeholder="enter your name..."
+                />
+              </div>
+
+              <div class="p-2">
+                <label for="user_order" class="text-muted">Your Order</label>
+                <input
+                  type="text"
+                  id="user_order"
+                  class="form-control"
+                  placeholder="enter your order..."
+                />
+              </div>
+
+              <div class="p-2">
+                <label for="user_orders" class="text-muted">How Much</label>
+                <input
+                  type="text"
+                  id="user_orders"
+                  class="form-control"
+                  placeholder="how many orders..."
+                />
+              </div>
+
+              <div class="p-2">
+                <label for="user_address" class="text-muted"
+                  >Your Address</label
+                >
+                <textarea
+                  id="user_address"
+                  class="form-control"
+                  placeholder="enter your address..."
+                ></textarea>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="order-details">
+              <div class="p-2">
+                <label for="user_number" class="text-muted">Your Number</label>
+                <input
+                  type="text"
+                  id="user_number"
+                  class="form-control"
+                  placeholder="enter your number..."
+                />
+              </div>
+
+              <div class="p-2">
+                <label for="add_food" class="text-muted">Additional Food</label>
+                <input
+                  type="text"
+                  id="add_food"
+                  class="form-control"
+                  placeholder="extra with food..."
+                />
+              </div>
+
+              <div class="p-2">
+                <label for="data_time" class="text-muted">Data and Time</label>
+                <input
+                  type="date"
+                  id="data_time"
+                  class="form-control"
+                  placeholder="how many orders..."
+                />
+              </div>
+
+              <div class="p-2">
+                <label for="user_message" class="text-muted"
+                  >Your Message</label
+                >
+                <textarea
+                  id="user_message"
+                  class="form-control"
+                  placeholder="enter your message..."
+                ></textarea>
+              </div>
+            </div>
+          </div>
+          <button>Order Now</button>
+        </div>
+      </div>
+    </section>
+    <!-- End Order-Now Area -->
+    <!-- ================================================================== -->
+
+    <!-- Start Footer Area -->
+    <footer class="p-5">
+      <div class="container pb-4">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="footerDetails">
+              <h5 class="h3 fw-bold">Location</h5>
+              <p class="text-muted">India</p>
+              <p class="text-muted">Egypt</p>
+              <p class="text-muted">USA</p>
+              <p class="text-muted">London</p>
+              <p class="text-muted">France</p>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="footerDetails">
+              <h5 class="h3 fw-bold">Quick Links</h5>
+              <div class="d-flex flex-column">
+                <a href="#home" class="text-decoration-none pb-1 text-muted"
+                  >Home</a
+                >
+                <a href="#dishes" class="text-decoration-none pb-1 text-muted"
+                  >Dishes</a
+                >
+                <a href="#about" class="text-decoration-none pb-1 text-muted"
+                  >About</a
+                >
+                <a href="#menu" class="text-decoration-none pb-1 text-muted"
+                  >Menu</a
+                >
+                <a href="#review" class="text-decoration-none pb-1 text-muted"
+                  >Review</a
+                >
+                <a href="#order" class="text-decoration-none pb-1 text-muted"
+                  >Order</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="footerDetails">
+              <h5 class="h3 fw-bold">Contact Info</h5>
+              <p class="text-muted">+123-456-789</p>
+              <p class="text-muted">+111-222-3333</p>
+              <p class="text-muted"> kokonabil857@gmail.com</p>
+              <p class="text-muted">ABC@ABC.com</p>
+              <p class="text-muted">Cairo, Egypt-115548</p>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="footerDetails">
+              <h5 class="h3 fw-bold">Follow US</h5>
+              <div class="d-flex flex-column">
+                <a href="#" class="text-decoration-none pb-1 text-muted"
+                  >Facebook
+                </a>
+                <a href="#" class="text-decoration-none pb-1 text-muted"
+                  >Twitter</a
+                >
+                <a href="#" class="text-decoration-none pb-1 text-muted"
+                  >Instgram
+                </a>
+                <a href="#" class="text-decoration-none pb-1 text-muted"
+                  >GitHub
+                </a>
+                <a href="#" class="text-decoration-none pb-1 text-muted"
+                  >LinkedIn</a
+                >
+              </div>
+              <div class="pt-3 socialMediaIcons">
+                <a class="text-muted" href=""
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a class="text-muted" href=""><i class="fab fa-twitter"></i></a>
+                <a class="text-muted" href=""
+                  ><i class="fab fa-instagram"></i
+                ></a>
+                <a class="text-muted" href=""><i class="fab fa-github"></i></a>
+                <a class="text-muted" href=""
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="container d-flex justify-content-center align-items-center endFooter"
+      >
+        <p>CopyRight @ 2022 by <a href="#">kEROLOS NABIL</a></p>
+      </div>
+    </footer>
+    <!-- End Footer Area -->
+    <!-- ================================================================== -->
+
+    <!-- Back to Home Icon -->
+    <div id="backToHome">
+      <a href="#home" class="text-decoration-none text-muted" id="backHomeIcon"
+        ><i class="fas fa-arrow-circle-up"></i
+      ></a>
+    </div>
+    <!-- ================================================================== -->
+
+    <!-- BootStrap Bundel -->
+    <script src="js/bootstrap.bundle.js"></script>
+    <!-- jQuery -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <!-- Owl Carousel -->
+    <script src="js/owl.carousel.min.js"></script>
+    <!-- My Script (JS) -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
